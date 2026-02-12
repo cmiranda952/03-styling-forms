@@ -27,9 +27,13 @@ h1 {
 
 /* Container */
 .container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
+  font-weight: bold;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
 }
 
 /* Header */

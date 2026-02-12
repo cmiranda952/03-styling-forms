@@ -38,7 +38,52 @@
       <div class="reservation-card">
         <h2>Reserve Now</h2>
         <div class="form-placeholder">
-          [Reservation Form Placeholder]
+          <form class="row g-3">
+            <div class="col-md-6">
+              <label for="reservationName" class="form-label">Name</label>
+              <input type="text" class="form-control" id="reservationName" name="name" placeholder="Alex Rivera" required />
+            </div>
+            <div class="col-md-6">
+              <label for="reservationEmail" class="form-label">Email</label>
+              <input type="email" class="form-control" id="reservationEmail" name="email" placeholder="alex@email.com" required />
+            </div>
+            <div class="col-md-6">
+              <label for="reservationZip" class="form-label">Zip Code</label>
+              <input type="text" class="form-control" id="reservationZip" name="zip" placeholder="10001" inputmode="numeric" required />
+            </div>
+            <div class="col-md-6">
+              <label for="reservationParty" class="form-label">Party Size</label>
+              <input type="number" class="form-control" id="reservationParty" name="party" min="1" max="12" value="2" required />
+            </div>
+            <div class="col-12">
+              <label for="reservationAdventure" class="form-label">Adventure Level</label>
+              <select class="form-select" id="reservationAdventure" name="adventure" required>
+                <option value="" selected disabled>Select your level</option>
+                <option value="curious">Curious</option>
+                <option value="bold">Bold</option>
+                <option value="fearless">Fearless</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="reservationBirthday" name="birthday" />
+                <label class="form-check-label" for="reservationBirthday">
+                  Would you like to pretend it's your birthday for free cake?
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="reservationConsent" name="consent" required />
+                <label class="form-check-label" for="reservationConsent">
+                  I accept that I have no idea where I'll be eating, and that's OK.
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-dark w-100">Book the Mystery</button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
